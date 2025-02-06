@@ -5,6 +5,7 @@
  */
 
 #include <behaviors.dtsi>
+#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/pointing.h>
@@ -77,7 +78,7 @@
             // | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
-            display-name = "Command";
+            display-name = "Meta";
             bindings = <
 &kp ESC    &mt F1 Q  &mt F2 W  &mt F3 E          &mt F4 R      &mt F5 T        &mt F6 Y  &mt F7 U   &mt F8 I   &mt F9 O    &mt F10 P      &kp F11
 &kp TAB    &kp A     &kp S     &kp D             &kp F         &kp G           &kp H     &kp J      &kp K      &kp L       &kp SEMICOLON  &kp F12
@@ -96,13 +97,13 @@
             >;
         };
 
-        Numpad {
-            display-name = "Numpad";
+        NumpadBT {
+            display-name = "NumBT";
             bindings = <
-&kp ESC  &none  &none  &none            &kp HOME          &none             &kp KP_CLEAR  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_MULTIPLY
-&trans   &none  &none  &none            &kp END           &none             &none         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp KP_DIVIDE
-&none    &none  &none  &none            &none             &none             &kp KP_EQUAL  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp DEL
-                       &kp PRINTSCREEN  &kp LEFT_CONTROL  &kp KP_NUMLOCK    &kp ENTER     &kp RIGHT_ALT    &kp KP_NUMBER_0
+&kp ESC         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3      &bt BT_SEL 4      &kp KP_CLEAR  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_MULTIPLY
+&trans          &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2    &bt BT_DISC 3     &bt BT_DISC 4     &none         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp KP_DIVIDE
+&bt BT_CLR_ALL  &bt BT_CLR     &bt BT_PRV     &bt BT_NXT       &kp END           &kp HOME          &kp KP_EQUAL  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp DEL
+                                              &kp PRINTSCREEN  &kp LEFT_CONTROL  &kp KP_NUMLOCK    &kp ENTER     &kp RIGHT_ALT    &kp KP_NUMBER_0
             >;
         };
 
