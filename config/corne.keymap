@@ -46,10 +46,10 @@
 
             display-name = "Main";
             bindings = <
-&kp ESC         &kp Q  &kp W  &kp E    &kp R  &kp T            &kp Y        &kp U      &kp I      &kp O    &kp P     &kp EQUAL
-&lt 4 CAPSLOCK  &kp A  &kp S  &kp D    &kp F  &kp G            &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LSHFT       &kp Z  &kp X  &kp C    &kp V  &kp B            &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
-                              &kp TAB  &mo 1  &kp BACKSPACE    &lt 2 SPACE  &kp ENTER  &to 3
+&lt 4 ESC         &kp Q  &kp W  &kp E    &kp R  &kp T            &kp Y        &kp U      &kp I      &kp O    &kp P     &kp EQUAL
+&kp LEFT_SHIFT    &kp A  &kp S  &kp D    &kp F  &kp G            &kp H        &kp J      &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LEFT_CONTROL  &kp Z  &kp X  &kp C    &kp V  &kp B            &kp N        &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp BACKSLASH
+                                &kp TAB  &mo 1  &kp BACKSPACE    &lt 2 SPACE  &kp ENTER  &to 3
             >;
         };
 
@@ -62,10 +62,10 @@
 
             display-name = "NumSym";
             bindings = <
-&kp ESC         &none          &kp HOME        &kp UP_ARROW    &kp END          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp MINUS
-&kp LEFT_ALT    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp UNDER
-&kp LEFT_SHIFT  &kp PAGE_DOWN  &none           &kp GRAVE       &kp TILDE        &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp DELETE
-                                               &kp TAB         &trans           &kp BACKSPACE           &kp SPACE              &kp ENTER     &kp NUMBER_0
+&kp ESC           &none          &kp HOME        &kp UP_ARROW    &kp END          &kp LEFT_PARENTHESIS    &kp RIGHT_PARENTHESIS  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp PLUS      &kp MINUS
+&kp LEFT_SHIFT    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LEFT_BRACE          &kp RIGHT_BRACE        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp ASTERISK  &kp UNDER
+&kp LEFT_CONTROL  &kp PAGE_DOWN  &kp LEFT_ALT    &kp GRAVE       &kp TILDE        &kp LEFT_BRACKET        &kp RIGHT_BRACKET      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH     &kp DELETE
+                                                 &kp TAB         &trans           &kp BACKSPACE           &kp SPACE              &kp ENTER     &kp NUMBER_0
             >;
         };
 
@@ -78,30 +78,30 @@
 
             display-name = "Meta";
             bindings = <
-&kp ESC         &mt F1 Q  &mt F2 W  &mt F3 E  &mt F4 R          &mt F5 T            &mt F6 Y  &mt F7 U   &mt F8 I   &mt F9 O    &mt F10 P      &kp F11
-&kp LEFT_ALT    &kp A     &kp S     &kp D     &kp F             &kp G               &kp H     &kp J      &kp K      &kp L       &kp SEMICOLON  &kp F12
-&kp LEFT_SHIFT  &kp Z     &kp X     &kp C     &kp V             &kp B               &kp N     &kp M      &kp COMMA  &kp PERIOD  &kp SLASH      &kp DELETE
-                                    &kp TAB   &kp LEFT_CONTROL  &kp LEFT_COMMAND    &trans    &kp ENTER  &kp SPACE
+&kp ESC           &mt F1 Q  &mt F2 W  &mt F3 E  &mt F4 R      &mt F5 T            &mt F6 Y  &mt F7 U   &mt F8 I   &mt F9 O    &mt F10 P      &kp F11
+&kp LEFT_SHIFT    &kp A     &kp S     &kp D     &kp F         &kp G               &kp H     &kp J      &kp K      &kp L       &kp SEMICOLON  &kp F12
+&kp LEFT_CONTROL  &kp Z     &kp X     &kp C     &kp V         &kp B               &kp N     &kp M      &kp COMMA  &kp PERIOD  &kp SLASH      &kp DELETE
+                                      &kp TAB   &kp LEFT_ALT  &kp LEFT_COMMAND    &trans    &kp ENTER  &kp SPACE
             >;
         };
 
         Mouse {
             display-name = "Mouse";
             bindings = <
-&kp ESC     &none          &none           &kp UP_ARROW    &none            &CloseWindow    &kp PRINTSCREEN                         &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none           &to 5
-&lt 4 HOME  &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &Back           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP    &none
-&kp END     &kp PAGE_DOWN  &kp K_CUT       &kp K_COPY      &kp K_PASTE      &kp K_UNDO      &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &msc SCRL_DOWN  &kp DELETE
-                                           &kp TAB         &kp BACKSPACE    &to 0           &mkp LCLK                               &kp ENTER       &kp SPACE
+&lt 4 ESC         &none          &kp HOME        &kp UP_ARROW    &kp END          &CloseWindow    &kp PRINTSCREEN                         &mkp LCLK       &mmv MOVE_UP    &mkp RCLK        &none           &to 5
+&kp LEFT_SHIFT    &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &Back           &kp C_AC_DESKTOP_SHOW_ALL_WINDOWS       &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &msc SCRL_UP    &none
+&kp LEFT_CONTROL  &kp PAGE_DOWN  &kp K_CUT       &kp K_COPY      &kp K_PASTE      &kp K_UNDO      &kp C_AC_DESKTOP_SHOW_ALL_APPLICATIONS  &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &msc SCRL_DOWN  &kp DELETE
+                                                 &kp TAB         &kp BACKSPACE    &to 0           &mkp LCLK                               &kp ENTER       &kp SPACE
             >;
         };
 
         NumpadBT {
             display-name = "NumBT";
             bindings = <
-&kp ESC         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3      &bt BT_SEL 4      &kp KP_CLEAR  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_MULTIPLY
-&trans          &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2    &bt BT_DISC 3     &bt BT_DISC 4     &none         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_SUBTRACT  &kp KP_DIVIDE
-&bt BT_CLR_ALL  &bt BT_CLR     &bt BT_PRV     &bt BT_NXT       &kp END           &kp HOME          &kp KP_EQUAL  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp DEL
-                                              &kp PRINTSCREEN  &kp LEFT_CONTROL  &kp KP_NUMLOCK    &kp ENTER     &kp RIGHT_ALT    &kp KP_NUMBER_0
+&trans            &bt BT_SEL 0    &bt BT_SEL 1   &bt BT_SEL 2     &bt BT_SEL 3   &bt BT_SEL 4     &kp KP_CLEAR  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_MINUS
+&trans            &bt BT_DISC 0   &bt BT_DISC 1  &bt BT_DISC 2    &bt BT_DISC 3  &bt BT_DISC 4    &none         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp KP_EQUAL
+&kp LEFT_CONTROL  &bt BT_CLR_ALL  &bt BT_CLR     &none            &kp END        &kp HOME         &kp KP_DOT    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DIVIDE    &kp DEL
+                                                 &kp PRINTSCREEN  &kp LEFT_ALT   &kp BACKSPACE    &kp SPACE     &kp ENTER        &kp KP_NUMBER_0
             >;
         };
 
